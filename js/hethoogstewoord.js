@@ -12,5 +12,15 @@ function newthrow() {
 	$("#letter2").html(letterdice1[ldice][1][0]);
 	$("#letter3").html(letterdice1[ldice][2][0]);
 	$("#letter4").html(letterdice1[ldice][3][0]);
+	ldice = Math.floor((Math.random() * 6));
+	$("#letter5").html(letterdice2[ldice][0][0]);
+	$("#letter6").html(letterdice2[ldice][1][0]);
+	$("#letter7").html(letterdice2[ldice][2][0]);
+	$("#letter8").html(letterdice2[ldice][3][0]);
+	ldice = Math.floor((Math.random() * 6));
+	$("#letter9").html(letterdice3[ldice][0][0]);
+	$("#letter10").html(letterdice3[ldice][1][0]);
+	$("#letter11").html(letterdice3[ldice][2][0]);
+	$("#letter12").html(letterdice3[ldice][3][0]);
 }
 
