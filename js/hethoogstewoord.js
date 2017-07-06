@@ -4,5 +4,13 @@ var letterdice2 = [[['n','y'],['e','g'],['f','b'],['r','b']],[['o','g'],['t','r'
 var letterdice3 = [[['d','b'],['h','r'],['t','g'],['o','y']],[['q','r'],['a','y'],['s','b'],['i','b']],[['l','g'],['u','b'],['e','y'],['k','r']],[['n','b'],['g','y'],['e','r'],['z','g']],[['e','g'],['c','r'],['r','r'],['m','y']],[['v','g'],['a','g'],['n','b'],['i','y']]];
 function initialization() {
 	console.log("Initialization " + scoredice[2]);
+	newthrow();
+}
+function newthrow() {
+	var ldice = Math.floor((Math.random() * 6));
+	$("#letter1").html(letterdice1[ldice][0][0]);
+	$("#letter2").html(letterdice1[ldice][1][0]);
+	$("#letter3").html(letterdice1[ldice][2][0]);
+	$("#letter4").html(letterdice1[ldice][3][0]);
 }
 
