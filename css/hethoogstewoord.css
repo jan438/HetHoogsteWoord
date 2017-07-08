@@ -1,11 +1,14 @@
 #hethoogstewoordcontainer {
   position: relative;
-  width: 550px;
-  height: 225px;
+  width: 800px;
+  height: 400px;
 }
 .letterclass {
   width: 50px;
   height: 50px;
   font-size: 30px;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
 }
