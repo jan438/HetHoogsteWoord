@@ -12,6 +12,66 @@
   vertical-align: middle;
   display: inline-block;
 }
+#letter1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#letter2 {
+  position: absolute;
+  top: 0px;
+  left: 50px;
+}
+#letter3 {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+}
+#letter4 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+#letter5 {
+  position: absolute;
+  top: 0px;
+  left: 125px;
+}
+#letter6 {
+  position: absolute;
+  top: 50px;
+  left: 175px;
+}
+#letter7 {
+  position: absolute;
+  top: 50px;
+  left: 125px;
+}
+#letter8 {
+  position: absolute;
+  top: 0px;
+  left: 175px;
+}
+#letter9 {
+  position: absolute;
+  top: 0px;
+  left: 250px;
+}
+#letter10 {
+  position: absolute;
+  top: 0px;
+  left: 300px;
+}
+#letter11 {
+  position: absolute;
+  top: 50px;
+  left: 250px;
+}
+#letter12 {
+  position: absolute;
+  top: 50px;
+  left: 300px;
+}
 .box-shadow {
   -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
   -moz-box-shadow:    0px -4px 3px rgba(50, 50, 50, 0.75);
