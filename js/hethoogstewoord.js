@@ -1,4 +1,4 @@
-var scoredice = [[[1,'b'],[2,'y'],[3,'r'],[4,'g']],[[1,'g'],[2,'b'],[3,'r'],[4,'y']],[[1,'y'],[2,'g'],[3,'b'],[4,'r']],[[1,'r'],[2,'y'],[3,'g'],[4,'b']],[[1,'b'],[2,'r'],[3,'y'],[4,'g']],[[1,'y'],[2,'b'],[3,'g'],[4,'r']]];
+var scoredice = [[['1','b'],['2','y'],['3','r'],['4','g']],[['1','g'],['2','b'],['3','r'],['4','y']],[['1','y'],['2','g'],['3','b'],['4','r']],[['1','r'],['2','y'],['3','g'],['4','b']],[['1','b'],['2','r'],['3','y'],['4','g']],[['1','y'],['2','b'],['3','g'],['4','r']]];
 var letterdice1 = [[['a','y'],['m','r'],['t','b'],['g','g']],[['h','b'],['n','g'],['u','y'],['b','r']],[['w','g'],['j','r'],['p','y'],['d','b']],[['i','y'],['o','b'],['v','r'],['c','g']],[['r','r'],['o','b'],['k','g'],['e','y']],[['l','b'],['s','g'],['f','r'],['c','y']]];
 var letterdice2 = [[['n','y'],['e','g'],['f','b'],['r','b']],[['o','g'],['t','r'],['d','y'],['g','g']],[['x','r'],['o','b'],['k','g'],['a','y']],[['b','g'],['i','y'],['w','r'],['m','r']],[['f','r'],['n','y'],['l','r'],['s','b']],[['e','y'],['a','b'],['p','b'],['u','g']]];
 var letterdice3 = [[['d','b'],['h','r'],['t','g'],['o','y']],[['q','r'],['a','y'],['s','b'],['i','b']],[['l','g'],['u','b'],['e','y'],['k','r']],[['n','b'],['g','y'],['e','r'],['z','g']],[['e','g'],['c','r'],['r','r'],['m','y']],[['v','g'],['a','g'],['n','b'],['i','y']]];
@@ -93,6 +93,31 @@ function newthrow() {
 	$("#letter12").css('background-color', backgroundcolor(letterdice3[ldice][3][1]));
 	$("#letter12").on('click', function() {
 		$("#letter12").addClass('box-shadow');
+	});
+	var ddice = Math.floor((Math.random() * 6));
+	$("#digit1").html(scoredice[ddice][0][0]);
+	$("#digit1").css('color', 'white');
+	$("#digit1").css('background-color', backgroundcolor(scoredice[ddice][0][1]));
+	$("#digit1").on('click', function() {
+		$("#digit1").addClass('box-shadow');
+	});
+	$("#digit2").html(scoredice[ddice][1][0]);
+	$("#digit2").css('color', 'white');
+	$("#digit2").css('background-color', backgroundcolor(scoredice[ddice][1][1]));
+	$("#digit2").on('click', function() {
+		$("#digit2").addClass('box-shadow');
+	});
+	$("#digit3").html(scoredice[ddice][2][0]);
+	$("#digit3").css('color', 'white');
+	$("#digit3").css('background-color', backgroundcolor(scoredice[ddice][2][1]));
+	$("#digit3").on('click', function() {
+		$("#digit3").addClass('box-shadow');
+	});
+	$("#digit4").html(scoredice[ddice][3][0]);
+	$("#digit4").css('color', 'white');
+	$("#digit4").css('background-color', backgroundcolor(scoredice[ddice][3][1]));
+	$("#digit4").on('click', function() {
+		$("#digit4").addClass('box-shadow');
 	});
 }
 
