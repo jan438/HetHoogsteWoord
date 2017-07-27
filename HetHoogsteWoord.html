@@ -4,6 +4,45 @@
 	<title>Het Hoogste Woord</title>
 	<script type="text/javascript" src="js/jquery.1.10.2.js"></script>
 	<link rel="stylesheet" href="css/hethoogstewoord.css">
+	<style type="text/css" media="screen">
+		#demo-cube {
+			margin: auto;
+		}
+		#demo-cuboid {
+			margin: auto;
+			height: 430px;
+		}
+		#demo-cube .face {
+			background-color: rgba(0,0,0,0.05);
+			-webkit-backface-visibility: visible;
+		}
+		#demo-cube .face, #demo-cuboid .face {
+			vertical-align: middle;
+			text-align: center;
+			font-family: "Lucida Grande";
+			font-size: 13px;
+			text-shadow: 0 1px 0 #fff;
+		}
+		#demo-settings .face {
+			background-color: rgba(0,0,0,0.1);
+		}
+	</style>
+	<script type="text/javascript" charset="utf-8">
+		window.onload = function() {
+			var buttons = document.getElementById('cube-buttons').getElementsByTagName('button');
+			for (var i = 0, l = buttons.length; i < l; i++) {
+				buttons[i].onclick = function() {
+					document.getElementById('demo-cube').getElementsByTagName('div')[0].className = 'cube to' + this.innerHTML;
+				};
+			}
+			var buttons = document.getElementById('cuboid-buttons').getElementsByTagName('button');
+			for (var i = 0, l = buttons.length; i < l; i++) {
+				buttons[i].onclick = function() {
+					document.getElementById('demo-cuboid').getElementsByTagName('div')[0].className = 'cube to' + this.innerHTML;
+				};
+			}
+		};
+	</script>
 </head>
 <body>
 <h1>Het Hoogste Woord</h1>
@@ -93,6 +132,17 @@
 	</div>
 	<div id="word12" class="letterclass">
 	_
+	</div>
+</div>
+<p id="cube-buttons"><button>Top</button> <button>Front</button> <button>Bottom</button> <button>Left</button> <button>Right</button> <button>Rear</button></p>
+<div class="cube-container" id="demo-cube">
+	<div class="cube toFront">
+		<div class="face top"><h3>Top</h3></div>
+		<div class="face front"><h3>Front</h3></div>
+		<div class="face bottom"><h3>Bottom</h3></div>
+		<div class="face left"><h3>Left</h3></div>
+		<div class="face right"><h3>Right</h3></div>
+		<div class="face rear"><h3>Rear</h3></div>
 	</div>
 </div>
 <script type="text/javascript">
