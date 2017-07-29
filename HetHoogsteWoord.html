@@ -5,14 +5,12 @@
 	<script type="text/javascript" src="js/jquery.1.10.2.js"></script>
 	<link rel="stylesheet" href="css/hethoogstewoord.css">
 	<style type="text/css" media="screen">
-		#demo-cube {
+		#cube1 {
 			margin: auto;
 		}
-		#demo-cube .face {
+		#cube1 .face {
 			background-color: rgba(0,0,0,0.05);
 			-webkit-backface-visibility: visible;
-		}
-		#demo-cube .face {
 			vertical-align: middle;
 			text-align: center;
 			font-family: "Lucida Grande";
@@ -25,7 +23,7 @@
 			var buttons = document.getElementById('cube-buttons').getElementsByTagName('button');
 			for (var i = 0, l = buttons.length; i < l; i++) {
 				buttons[i].onclick = function() {
-					document.getElementById('demo-cube').getElementsByTagName('div')[0].className = 'cube to' + this.innerHTML;
+					document.getElementById('cube1').getElementsByTagName('div')[0].className = 'cube to' + this.innerHTML;
 				};
 			}
 		};
@@ -122,7 +120,7 @@
 	</div>
 </div>
 <p id="cube-buttons"><button>Top</button> <button>Front</button> <button>Bottom</button> <button>Left</button> <button>Right</button> <button>Rear</button></p>
-<div class="cube-container" id="demo-cube">
+<div class="cube-container" id="cube1">
 	<div class="cube toFront">
 		<div class="face top">
 			<div id="c1s1letter1">a</div>
