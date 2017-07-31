@@ -187,7 +187,28 @@
   -moz-box-shadow:    0px -4px 3px rgba(50, 50, 50, 0.75);
   box-shadow:         0px -4px 3px rgba(50, 50, 50, 0.75);
 }
-.cube-container {
+.cube-container1 {
+  -webkit-perspective: 1000;
+  position: absolute;
+  /* default size. if you change the width make sure to adjust the translateZ values */
+  width: 200px;
+  height: 200px;
+}
+.cube-container2 {
+  -webkit-perspective: 1000;
+  position: absolute;
+  /* default size. if you change the width make sure to adjust the translateZ values */
+  width: 200px;
+  height: 200px;
+}
+.cube-container3 {
+  -webkit-perspective: 1000;
+  position: absolute;
+  /* default size. if you change the width make sure to adjust the translateZ values */
+  width: 200px;
+  height: 200px;
+}
+.cube-container4 {
   -webkit-perspective: 1000;
   position: absolute;
   /* default size. if you change the width make sure to adjust the translateZ values */
