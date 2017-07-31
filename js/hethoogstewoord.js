@@ -120,6 +120,66 @@ function newthrow() {
 	$("#digit4").on('click', function() {
 		$("#digit4").addClass('box-shadow');
 	});
+	ldice = Math.floor((Math.random() * 6));
+	switch (ldice) {
+		case 0: document.getElementById('cube1').getElementsByTagName('div')[0].className = 'cube toTop';
+			break;
+		case 1: document.getElementById('cube1').getElementsByTagName('div')[0].className = 'cube toFront';
+			break;
+		case 2: document.getElementById('cube1').getElementsByTagName('div')[0].className = 'cube toBottom';
+			break;
+		case 3: document.getElementById('cube1').getElementsByTagName('div')[0].className = 'cube toLeft';
+			break;
+		case 4: document.getElementById('cube1').getElementsByTagName('div')[0].className = 'cube toRight';
+			break;
+		case 5: document.getElementById('cube1').getElementsByTagName('div')[0].className = 'cube toRear';
+			break;
+	}
+	ldice = Math.floor((Math.random() * 6));
+	switch (ldice) {
+		case 0: document.getElementById('cube2').getElementsByTagName('div')[0].className = 'cube toTop';
+			break;
+		case 1: document.getElementById('cube2').getElementsByTagName('div')[0].className = 'cube toFront';
+			break;
+		case 2: document.getElementById('cube2').getElementsByTagName('div')[0].className = 'cube toBottom';
+			break;
+		case 3: document.getElementById('cube2').getElementsByTagName('div')[0].className = 'cube toLeft';
+			break;
+		case 4: document.getElementById('cube2').getElementsByTagName('div')[0].className = 'cube toRight';
+			break;
+		case 5: document.getElementById('cube2').getElementsByTagName('div')[0].className = 'cube toRear';
+			break;
+	}
+	ldice = Math.floor((Math.random() * 6));
+	switch (ldice) {
+		case 0: document.getElementById('cube3').getElementsByTagName('div')[0].className = 'cube toTop';
+			break;
+		case 1: document.getElementById('cube3').getElementsByTagName('div')[0].className = 'cube toFront';
+			break;
+		case 2: document.getElementById('cube3').getElementsByTagName('div')[0].className = 'cube toBottom';
+			break;
+		case 3: document.getElementById('cube3').getElementsByTagName('div')[0].className = 'cube toLeft';
+			break;
+		case 4: document.getElementById('cube3').getElementsByTagName('div')[0].className = 'cube toRight';
+			break;
+		case 5: document.getElementById('cube3').getElementsByTagName('div')[0].className = 'cube toRear';
+			break;
+	}
+	ddice = Math.floor((Math.random() * 6));
+	switch (ddice) {
+		case 0: document.getElementById('cube4').getElementsByTagName('div')[0].className = 'cube toTop';
+			break;
+		case 1: document.getElementById('cube4').getElementsByTagName('div')[0].className = 'cube toFront';
+			break;
+		case 2: document.getElementById('cube4').getElementsByTagName('div')[0].className = 'cube toBottom';
+			break;
+		case 3: document.getElementById('cube4').getElementsByTagName('div')[0].className = 'cube toLeft';
+			break;
+		case 4: document.getElementById('cube4').getElementsByTagName('div')[0].className = 'cube toRight';
+			break;
+		case 5: document.getElementById('cube4').getElementsByTagName('div')[0].className = 'cube toRear';
+			break;
+	}
 }
 function letterselect(letter) {
 	if ($("#" + letter).hasClass('box-shadow')) {
