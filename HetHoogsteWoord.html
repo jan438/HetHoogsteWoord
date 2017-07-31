@@ -45,22 +45,6 @@
 			text-shadow: 0 1px 0 #fff;
 		}
 	</style>
-	<script type="text/javascript" charset="utf-8">
-		window.onload = function() {
-			var buttons1 = document.getElementById('cube-buttons1').getElementsByTagName('button');
-			for (var i = 0, l = buttons1.length; i < l; i++) {
-				buttons1[i].onclick = function() {
-					document.getElementById('cube1').getElementsByTagName('div')[0].className = 'cube to' + this.innerHTML;
-				};
-			}
-			var buttons2 = document.getElementById('cube-buttons2').getElementsByTagName('button');
-			for (var i = 0, l = buttons2.length; i < l; i++) {
-				buttons2[i].onclick = function() {
-					document.getElementById('cube2').getElementsByTagName('div')[0].className = 'cube to' + this.innerHTML;
-				};
-			}
-		};
-	</script>
 </head>
 <body>
 <h1>Het Hoogste Woord</h1>
@@ -152,8 +136,6 @@
 	_
 	</div>
 </div>
-<p id="cube-buttons1"><button>Top</button><button>Front</button><button>Bottom</button><button>Left</button><button>Right</button><button>Rear</button></p>
-<p id="cube-buttons2"><button>Top</button><button>Front</button><button>Bottom</button><button>Left</button><button>Right</button><button>Rear</button></p>
 <div class="cube-container1" id="cube1">
 	<div class="cube toFront">
 		<div class="face1 top">
