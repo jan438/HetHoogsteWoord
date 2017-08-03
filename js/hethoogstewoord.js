@@ -125,85 +125,157 @@ function newthrow() {
 			$("#c1s1letter1").html(letterdice1[ldice1][0][0]);
 			$("#c1s1letter1").css('color', 'white');
 			$("#c1s1letter1").css('background-color', backgroundcolor(letterdice1[ldice1][0][1]));
+			$("#c1s1letter1").on('click', function() {
+				letterselect("c1s1letter1");
+			});
 			$("#c1s1letter2").html(letterdice1[ldice1][1][0]);
 			$("#c1s1letter2").css('color', 'white');
 			$("#c1s1letter2").css('background-color', backgroundcolor(letterdice1[ldice1][1][1]));
+			$("#c1s1letter2").on('click', function() {
+				letterselect("c1s1letter2");
+			});
 			$("#c1s1letter3").html(letterdice1[ldice1][2][0]);
 			$("#c1s1letter3").css('color', 'white');
 			$("#c1s1letter3").css('background-color', backgroundcolor(letterdice1[ldice1][2][1]));
+			$("#c1s1letter3").on('click', function() {
+				letterselect("c1s1letter3");
+			});
 			$("#c1s1letter4").html(letterdice1[ldice1][3][0]);
 			$("#c1s1letter4").css('color', 'white');
 			$("#c1s1letter4").css('background-color', backgroundcolor(letterdice1[ldice1][3][1]));
+			$("#c1s1letter4").on('click', function() {
+				letterselect("c1s1letter4");
+			});
 			break;
 		case 1: document.getElementById('cube1').getElementsByTagName('div')[0].className = 'cube toFront';
 			$("#c1s2letter1").html(letterdice1[ldice1][0][0]);
 			$("#c1s2letter1").css('color', 'white');
 			$("#c1s2letter1").css('background-color', backgroundcolor(letterdice1[ldice1][0][1]));
+			$("#c1s2letter1").on('click', function() {
+				letterselect("c1s2letter1");
+			});
 			$("#c1s2letter2").html(letterdice1[ldice1][1][0]);
 			$("#c1s2letter2").css('color', 'white');
 			$("#c1s2letter2").css('background-color', backgroundcolor(letterdice1[ldice1][1][1]));
+			$("#c1s2letter2").on('click', function() {
+				letterselect("c1s2letter2");
+			});
 			$("#c1s2letter3").html(letterdice1[ldice1][2][0]);
 			$("#c1s2letter3").css('color', 'white');
 			$("#c1s2letter3").css('background-color', backgroundcolor(letterdice1[ldice1][2][1]));
+			$("#c1s2letter3").on('click', function() {
+				letterselect("c1s2letter3");
+			});
 			$("#c1s2letter4").html(letterdice1[ldice1][3][0]);
 			$("#c1s2letter4").css('color', 'white');
 			$("#c1s2letter4").css('background-color', backgroundcolor(letterdice1[ldice1][3][1]));
+			$("#c1s2letter4").on('click', function() {
+				letterselect("c1s2letter4");
+			});
 			break;
 		case 2: document.getElementById('cube1').getElementsByTagName('div')[0].className = 'cube toBottom';
 			$("#c1s3letter1").html(letterdice1[ldice1][0][0]);
 			$("#c1s3letter1").css('color', 'white');
 			$("#c1s3letter1").css('background-color', backgroundcolor(letterdice1[ldice1][0][1]));
+			$("#c1s3letter1").on('click', function() {
+				letterselect("c1s3letter1");
+			});
 			$("#c1s3letter2").html(letterdice1[ldice1][1][0]);
 			$("#c1s3letter2").css('color', 'white');
 			$("#c1s3letter2").css('background-color', backgroundcolor(letterdice1[ldice1][1][1]));
+			$("#c1s3letter2").on('click', function() {
+				letterselect("c1s3letter2");
+			});
 			$("#c1s3letter3").html(letterdice1[ldice1][2][0]);
 			$("#c1s3letter3").css('color', 'white');
 			$("#c1s3letter3").css('background-color', backgroundcolor(letterdice1[ldice1][2][1]));
+			$("#c1s3letter3").on('click', function() {
+				letterselect("c1s3letter3");
+			});
 			$("#c1s3letter4").html(letterdice1[ldice1][3][0]);
 			$("#c1s3letter4").css('color', 'white');
 			$("#c1s3letter4").css('background-color', backgroundcolor(letterdice1[ldice1][3][1]));
+			$("#c1s3letter4").on('click', function() {
+				letterselect("c1s3letter4");
+			});
 			break;
 		case 3: document.getElementById('cube1').getElementsByTagName('div')[0].className = 'cube toLeft';
 			$("#c1s4letter1").html(letterdice1[ldice1][0][0]);
 			$("#c1s4letter1").css('color', 'white');
 			$("#c1s4letter1").css('background-color', backgroundcolor(letterdice1[ldice1][0][1]));
+			$("#c1s4letter1").on('click', function() {
+				letterselect("c1s4letter1");
+			});
 			$("#c1s4letter2").html(letterdice1[ldice1][1][0]);
 			$("#c1s4letter2").css('color', 'white');
 			$("#c1s4letter2").css('background-color', backgroundcolor(letterdice1[ldice1][1][1]));
+			$("#c1s4letter2").on('click', function() {
+				letterselect("c1s4letter2");
+			});
 			$("#c1s4letter3").html(letterdice1[ldice1][2][0]);
 			$("#c1s4letter3").css('color', 'white');
 			$("#c1s4letter3").css('background-color', backgroundcolor(letterdice1[ldice1][2][1]));
+			$("#c1s4letter3").on('click', function() {
+				letterselect("c1s4letter3");
+			});
 			$("#c1s4letter4").html(letterdice1[ldice1][3][0]);
 			$("#c1s4letter4").css('color', 'white');
 			$("#c1s4letter4").css('background-color', backgroundcolor(letterdice1[ldice1][3][1]));
+			$("#c1s4letter4").on('click', function() {
+				letterselect("c1s4letter4");
+			});
 			break;
 		case 4: document.getElementById('cube1').getElementsByTagName('div')[0].className = 'cube toRight';
 			$("#c1s5letter1").html(letterdice1[ldice1][0][0]);
 			$("#c1s5letter1").css('color', 'white');
 			$("#c1s5letter1").css('background-color', backgroundcolor(letterdice1[ldice1][0][1]));
+			$("#c1s5letter1").on('click', function() {
+				letterselect("c1s5letter1");
+			});
 			$("#c1s5letter2").html(letterdice1[ldice1][1][0]);
 			$("#c1s5letter2").css('color', 'white');
 			$("#c1s5letter2").css('background-color', backgroundcolor(letterdice1[ldice1][1][1]));
+			$("#c1s5letter2").on('click', function() {
+				letterselect("c1s5letter2");
+			});
 			$("#c1s5letter3").html(letterdice1[ldice1][2][0]);
 			$("#c1s5letter3").css('color', 'white');
 			$("#c1s5letter3").css('background-color', backgroundcolor(letterdice1[ldice1][2][1]));
+			$("#c1s5letter3").on('click', function() {
+				letterselect("c1s5letter3");
+			});
 			$("#c1s5letter4").html(letterdice1[ldice1][3][0]);
 			$("#c1s5letter4").css('color', 'white');
 			$("#c1s5letter4").css('background-color', backgroundcolor(letterdice1[ldice1][3][1]));
+			$("#c1s5letter4").on('click', function() {
+				letterselect("c1s5letter4");
+			});
 			break;
 		case 5: document.getElementById('cube1').getElementsByTagName('div')[0].className = 'cube toRear';
 			$("#c1s6letter1").html(letterdice1[ldice1][0][0]);
 			$("#c1s6letter1").css('color', 'white');
 			$("#c1s6letter1").css('background-color', backgroundcolor(letterdice1[ldice1][0][1]));
+			$("#c1s6letter1").on('click', function() {
+				letterselect("c1s6letter1");
+			});
 			$("#c1s6letter2").html(letterdice1[ldice1][1][0]);
 			$("#c1s6letter2").css('color', 'white');
 			$("#c1s6letter2").css('background-color', backgroundcolor(letterdice1[ldice1][1][1]));
+			$("#c1s6letter2").on('click', function() {
+				letterselect("c1s6letter2");
+			});
 			$("#c1s6letter3").html(letterdice1[ldice1][2][0]);
 			$("#c1s6letter3").css('color', 'white');
 			$("#c1s6letter3").css('background-color', backgroundcolor(letterdice1[ldice1][2][1]));
+			$("#c1s6letter3").on('click', function() {
+				letterselect("c1s6letter3");
+			});
 			$("#c1s6letter4").html(letterdice1[ldice1][3][0]);
 			$("#c1s6letter4").css('color', 'white');
 			$("#c1s6letter4").css('background-color', backgroundcolor(letterdice1[ldice1][3][1]));
+			$("#c1s6letter4").on('click', function() {
+				letterselect("c1s6letter4");
+			});
 			break;
 	}
 	switch (ldice2) {
@@ -211,85 +283,151 @@ function newthrow() {
 			$("#c2s1letter1").html(letterdice2[ldice2][0][0]);
 			$("#c2s1letter1").css('color', 'white');
 			$("#c2s1letter1").css('background-color', backgroundcolor(letterdice2[ldice2][0][1]));
+			$("#c2s1letter1").on('click', function() {
+				letterselect("c2s1letter1");
+			});
 			$("#c2s1letter2").html(letterdice2[ldice2][1][0]);
 			$("#c2s1letter2").css('color', 'white');
 			$("#c2s1letter2").css('background-color', backgroundcolor(letterdice2[ldice2][1][1]));
+			$("#c2s1letter2").on('click', function() {
+				letterselect("c2s1letter2");
+			});
 			$("#c2s1letter3").html(letterdice2[ldice2][2][0]);
 			$("#c2s1letter3").css('color', 'white');
 			$("#c2s1letter3").css('background-color', backgroundcolor(letterdice2[ldice2][2][1]));
+			$("#c2s1letter3").on('click', function() {
+				letterselect("c2s1letter3");
+			});
 			$("#c2s1letter4").html(letterdice2[ldice2][3][0]);
 			$("#c2s1letter4").css('color', 'white');
 			$("#c2s1letter4").css('background-color', backgroundcolor(letterdice2[ldice2][3][1]));
+			$("#c2s1letter4").on('click', function() {
+				letterselect("c2s1letter4");
+			});
 			break;
 		case 1: document.getElementById('cube2').getElementsByTagName('div')[0].className = 'cube toFront';
 			$("#c2s2letter1").html(letterdice2[ldice2][0][0]);
 			$("#c2s2letter1").css('color', 'white');
 			$("#c2s2letter1").css('background-color', backgroundcolor(letterdice2[ldice2][0][1]));
+			$("#c2s2letter1").on('click', function() {
+				letterselect("c2s2letter1");
+			});
 			$("#c2s2letter2").html(letterdice2[ldice2][1][0]);
 			$("#c2s2letter2").css('color', 'white');
 			$("#c2s2letter2").css('background-color', backgroundcolor(letterdice2[ldice2][1][1]));
+			$("#c2s2letter2").on('click', function() {
+				letterselect("c2s2letter2");
+			});
 			$("#c2s2letter3").html(letterdice2[ldice2][2][0]);
 			$("#c2s2letter3").css('color', 'white');
 			$("#c2s2letter3").css('background-color', backgroundcolor(letterdice2[ldice2][2][1]));
+			$("#c2s2letter3").on('click', function() {
+				letterselect("c2s2letter3");
+			});
 			$("#c2s2letter4").html(letterdice2[ldice2][3][0]);
 			$("#c2s2letter4").css('color', 'white');
 			$("#c2s2letter4").css('background-color', backgroundcolor(letterdice2[ldice2][3][1]));
+			$("#c2s2letter4").on('click', function() {
+				letterselect("c2s2letter4");
+			});
 			break;
 		case 2: document.getElementById('cube2').getElementsByTagName('div')[0].className = 'cube toBottom';
 			$("#c2s3letter1").html(letterdice2[ldice2][0][0]);
 			$("#c2s3letter1").css('color', 'white');
 			$("#c2s3letter1").css('background-color', backgroundcolor(letterdice2[ldice2][0][1]));
+			$("#c2s3letter1").on('click', function() {
+				letterselect("c2s3letter1");
+			});
 			$("#c2s3letter2").html(letterdice2[ldice2][1][0]);
 			$("#c2s3letter2").css('color', 'white');
 			$("#c2s3letter2").css('background-color', backgroundcolor(letterdice2[ldice2][1][1]));
+			$("#c2s3letter2").on('click', function() {
+				letterselect("c2s3letter2");
+			});
 			$("#c2s3letter3").html(letterdice2[ldice2][2][0]);
 			$("#c2s3letter3").css('color', 'white');
 			$("#c2s3letter3").css('background-color', backgroundcolor(letterdice2[ldice2][2][1]));
 			$("#c2s3letter4").html(letterdice2[ldice2][3][0]);
 			$("#c2s3letter4").css('color', 'white');
 			$("#c2s3letter4").css('background-color', backgroundcolor(letterdice2[ldice2][3][1]));
+			$("#c2s3letter4").on('click', function() {
+				letterselect("c2s3letter4");
+			});
 			break;
 		case 3: document.getElementById('cube2').getElementsByTagName('div')[0].className = 'cube toLeft';
 			$("#c2s4letter1").html(letterdice2[ldice2][0][0]);
 			$("#c2s4letter1").css('color', 'white');
 			$("#c2s4letter1").css('background-color', backgroundcolor(letterdice2[ldice2][0][1]));
+			$("#c2s4letter1").on('click', function() {
+				letterselect("c2s4letter1");
+			});
 			$("#c2s4letter2").html(letterdice2[ldice2][1][0]);
 			$("#c2s4letter2").css('color', 'white');
 			$("#c2s4letter2").css('background-color', backgroundcolor(letterdice2[ldice2][1][1]));
+			$("#c2s4letter2").on('click', function() {
+				letterselect("c2s4letter2");
+			});
 			$("#c2s4letter3").html(letterdice2[ldice2][2][0]);
 			$("#c2s4letter3").css('color', 'white');
 			$("#c2s4letter3").css('background-color', backgroundcolor(letterdice2[ldice2][2][1]));
+			$("#c2s4letter3").on('click', function() {
+				letterselect("c2s4letter3");
+			});
 			$("#c2s4letter4").html(letterdice2[ldice2][3][0]);
 			$("#c2s4letter4").css('color', 'white');
 			$("#c2s4letter4").css('background-color', backgroundcolor(letterdice2[ldice2][3][1]));
+			$("#c2s4letter4").on('click', function() {
+				letterselect("c2s4letter4");
+			});
 			break;
 		case 4: document.getElementById('cube2').getElementsByTagName('div')[0].className = 'cube toRight';
 			$("#c2s5letter1").html(letterdice2[ldice2][0][0]);
 			$("#c2s5letter1").css('color', 'white');
 			$("#c2s5letter1").css('background-color', backgroundcolor(letterdice2[ldice2][0][1]));
+			$("#c2s5letter1").on('click', function() {
+				letterselect("c2s5letter1");
+			});
 			$("#c2s5letter2").html(letterdice2[ldice2][1][0]);
 			$("#c2s5letter2").css('color', 'white');
 			$("#c2s5letter2").css('background-color', backgroundcolor(letterdice2[ldice2][1][1]));
+			$("#c2s5letter2").on('click', function() {
+				letterselect("c2s5letter2");
+			});
 			$("#c2s5letter3").html(letterdice2[ldice2][2][0]);
 			$("#c2s5letter3").css('color', 'white');
 			$("#c2s5letter3").css('background-color', backgroundcolor(letterdice2[ldice2][2][1]));
+			$("#c2s5letter3").on('click', function() {
+				letterselect("c2s5letter3");
+			});
 			$("#c2s5letter4").html(letterdice2[ldice2][3][0]);
 			$("#c2s5letter4").css('color', 'white');
 			$("#c2s5letter4").css('background-color', backgroundcolor(letterdice2[ldice2][3][1]));
+			$("#c2s5letter4").on('click', function() {
+				letterselect("c2s5letter4");
+			});
 			break;
 		case 5: document.getElementById('cube2').getElementsByTagName('div')[0].className = 'cube toRear';
 			$("#c2s6letter1").html(letterdice2[ldice2][0][0]);
 			$("#c2s6letter1").css('color', 'white');
 			$("#c2s6letter1").css('background-color', backgroundcolor(letterdice2[ldice2][0][1]));
+			$("#c2s6letter1").on('click', function() {
+				letterselect("c2s6letter1");
+			});
 			$("#c2s6letter2").html(letterdice2[ldice2][1][0]);
 			$("#c2s6letter2").css('color', 'white');
 			$("#c2s6letter2").css('background-color', backgroundcolor(letterdice2[ldice2][1][1]));
+			$("#c2s6letter2").on('click', function() {
+				letterselect("c2s6letter2");
+			});
 			$("#c2s6letter3").html(letterdice2[ldice2][2][0]);
 			$("#c2s6letter3").css('color', 'white');
 			$("#c2s6letter3").css('background-color', backgroundcolor(letterdice2[ldice2][2][1]));
 			$("#c2s6letter4").html(letterdice2[ldice2][3][0]);
 			$("#c2s6letter4").css('color', 'white');
 			$("#c2s6letter4").css('background-color', backgroundcolor(letterdice2[ldice2][3][1]));
+			$("#c2s6letter4").on('click', function() {
+				letterselect("c2s6letter4");
+			});
 			break;
 	}
 	switch (ldice3) {
@@ -297,85 +435,157 @@ function newthrow() {
 			$("#c3s1letter1").html(letterdice3[ldice3][0][0]);
 			$("#c3s1letter1").css('color', 'white');
 			$("#c3s1letter1").css('background-color', backgroundcolor(letterdice3[ldice3][0][1]));
+			$("#c3s1letter1").on('click', function() {
+				letterselect("c3s1letter1");
+			});
 			$("#c3s1letter2").html(letterdice3[ldice3][1][0]);
 			$("#c3s1letter2").css('color', 'white');
 			$("#c3s1letter2").css('background-color', backgroundcolor(letterdice3[ldice3][1][1]));
+			$("#c3s1letter2").on('click', function() {
+				letterselect("c3s1letter2");
+			});
 			$("#c3s1letter3").html(letterdice3[ldice3][2][0]);
 			$("#c3s1letter3").css('color', 'white');
 			$("#c3s1letter3").css('background-color', backgroundcolor(letterdice3[ldice3][2][1]));
+			$("#c3s1letter3").on('click', function() {
+				letterselect("c3s1letter3");
+			});
 			$("#c3s1letter4").html(letterdice3[ldice3][3][0]);
 			$("#c3s1letter4").css('color', 'white');
 			$("#c3s1letter4").css('background-color', backgroundcolor(letterdice3[ldice3][3][1]));
+			$("#c3s1letter4").on('click', function() {
+				letterselect("c3s1letter4");
+			});
 			break;
 		case 1: document.getElementById('cube3').getElementsByTagName('div')[0].className = 'cube toFront';
 			$("#c3s2letter1").html(letterdice3[ldice3][0][0]);
 			$("#c3s2letter1").css('color', 'white');
 			$("#c3s2letter1").css('background-color', backgroundcolor(letterdice3[ldice3][0][1]));
+			$("#c3s2letter1").on('click', function() {
+				letterselect("c3s2letter1");
+			});
 			$("#c3s2letter2").html(letterdice3[ldice3][1][0]);
 			$("#c3s2letter2").css('color', 'white');
 			$("#c3s2letter2").css('background-color', backgroundcolor(letterdice3[ldice3][1][1]));
+			$("#c3s2letter2").on('click', function() {
+				letterselect("c3s2letter2");
+			});
 			$("#c3s2letter3").html(letterdice3[ldice3][2][0]);
 			$("#c3s2letter3").css('color', 'white');
 			$("#c3s2letter3").css('background-color', backgroundcolor(letterdice3[ldice3][2][1]));
+			$("#c3s2letter3").on('click', function() {
+				letterselect("c3s2letter3");
+			});
 			$("#c3s2letter4").html(letterdice3[ldice3][3][0]);
 			$("#c3s2letter4").css('color', 'white');
 			$("#c3s2letter4").css('background-color', backgroundcolor(letterdice3[ldice3][3][1]));
+			$("#c3s2letter4").on('click', function() {
+				letterselect("c3s2letter4");
+			});
 			break;
 		case 2: document.getElementById('cube3').getElementsByTagName('div')[0].className = 'cube toBottom';
 			$("#c3s3letter1").html(letterdice3[ldice3][0][0]);
 			$("#c3s3letter1").css('color', 'white');
 			$("#c3s3letter1").css('background-color', backgroundcolor(letterdice3[ldice3][0][1]));
+			$("#c3s3letter1").on('click', function() {
+				letterselect("c3s3letter1");
+			});
 			$("#c3s3letter2").html(letterdice3[ldice3][1][0]);
 			$("#c3s3letter2").css('color', 'white');
 			$("#c3s3letter2").css('background-color', backgroundcolor(letterdice3[ldice3][1][1]));
+			$("#c3s3letter2").on('click', function() {
+				letterselect("c3s3letter2");
+			});
 			$("#c3s3letter3").html(letterdice3[ldice3][2][0]);
 			$("#c3s3letter3").css('color', 'white');
 			$("#c3s3letter3").css('background-color', backgroundcolor(letterdice3[ldice3][2][1]));
+			$("#c3s3letter3").on('click', function() {
+				letterselect("c3s3letter3");
+			});
 			$("#c3s3letter4").html(letterdice3[ldice3][3][0]);
 			$("#c3s3letter4").css('color', 'white');
 			$("#c3s3letter4").css('background-color', backgroundcolor(letterdice3[ldice3][3][1]));
+			$("#c3s3letter4").on('click', function() {
+				letterselect("c3s3letter4");
+			});
 			break;
 		case 3: document.getElementById('cube3').getElementsByTagName('div')[0].className = 'cube toLeft';
 			$("#c3s4letter1").html(letterdice3[ldice3][0][0]);
 			$("#c3s4letter1").css('color', 'white');
 			$("#c3s4letter1").css('background-color', backgroundcolor(letterdice3[ldice3][0][1]));
+			$("#c3s4letter1").on('click', function() {
+				letterselect("c3s4letter1");
+			});
 			$("#c3s4letter2").html(letterdice3[ldice3][1][0]);
 			$("#c3s4letter2").css('color', 'white');
 			$("#c3s4letter2").css('background-color', backgroundcolor(letterdice3[ldice3][1][1]));
+			$("#c3s4letter2").on('click', function() {
+				letterselect("c3s4letter2");
+			});
 			$("#c3s4letter3").html(letterdice3[ldice3][2][0]);
 			$("#c3s4letter3").css('color', 'white');
 			$("#c3s4letter3").css('background-color', backgroundcolor(letterdice3[ldice3][2][1]));
+			$("#c3s4letter3").on('click', function() {
+				letterselect("c3s4letter3");
+			});
 			$("#c3s4letter4").html(letterdice3[ldice3][3][0]);
 			$("#c3s4letter4").css('color', 'white');
 			$("#c3s4letter4").css('background-color', backgroundcolor(letterdice3[ldice3][3][1]));
+			$("#c3s4letter4").on('click', function() {
+				letterselect("c3s4letter4");
+			});
 			break;
 		case 4: document.getElementById('cube3').getElementsByTagName('div')[0].className = 'cube toRight';
 			$("#c3s5letter1").html(letterdice3[ldice3][0][0]);
 			$("#c3s5letter1").css('color', 'white');
 			$("#c3s5letter1").css('background-color', backgroundcolor(letterdice3[ldice3][0][1]));
+			$("#c3s5letter1").on('click', function() {
+				letterselect("c3s5letter1");
+			});
 			$("#c3s5letter2").html(letterdice3[ldice3][1][0]);
 			$("#c3s5letter2").css('color', 'white');
 			$("#c3s5letter2").css('background-color', backgroundcolor(letterdice3[ldice3][1][1]));
+			$("#c3s5letter2").on('click', function() {
+				letterselect("c3s5letter2");
+			});
 			$("#c3s5letter3").html(letterdice3[ldice3][2][0]);
 			$("#c3s5letter3").css('color', 'white');
 			$("#c3s5letter3").css('background-color', backgroundcolor(letterdice3[ldice3][2][1]));
+			$("#c3s5letter3").on('click', function() {
+				letterselect("c3s5letter3");
+			});
 			$("#c3s5letter4").html(letterdice3[ldice3][3][0]);
 			$("#c3s5letter4").css('color', 'white');
 			$("#c3s5letter4").css('background-color', backgroundcolor(letterdice3[ldice3][3][1]));
+			$("#c3s5letter4").on('click', function() {
+				letterselect("c3s5letter4");
+			});
 			break;
 		case 5: document.getElementById('cube3').getElementsByTagName('div')[0].className = 'cube toRear';
 			$("#c3s6letter1").html(letterdice3[ldice3][0][0]);
 			$("#c3s6letter1").css('color', 'white');
 			$("#c3s6letter1").css('background-color', backgroundcolor(letterdice3[ldice3][0][1]));
+			$("#c3s6letter1").on('click', function() {
+				letterselect("c3s6letter1");
+			});
 			$("#c3s6letter2").html(letterdice3[ldice3][1][0]);
 			$("#c3s6letter2").css('color', 'white');
 			$("#c3s6letter2").css('background-color', backgroundcolor(letterdice3[ldice3][1][1]));
+			$("#c3s6letter2").on('click', function() {
+				letterselect("c3s6letter2");
+			});
 			$("#c3s6letter3").html(letterdice3[ldice3][2][0]);
 			$("#c3s6letter3").css('color', 'white');
 			$("#c3s6letter3").css('background-color', backgroundcolor(letterdice3[ldice3][2][1]));
+			$("#c3s6letter3").on('click', function() {
+				letterselect("c3s6letter3");
+			});
 			$("#c3s6letter4").html(letterdice3[ldice3][3][0]);
 			$("#c3s6letter4").css('color', 'white');
 			$("#c3s6letter4").css('background-color', backgroundcolor(letterdice3[ldice3][3][1]));
+			$("#c3s6letter4").on('click', function() {
+				letterselect("c3s6letter4");
+			});
 			break;
 	}
 	switch (ddice) {
