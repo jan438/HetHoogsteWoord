@@ -347,6 +347,9 @@ function newthrow() {
 			$("#c2s3letter3").html(letterdice2[ldice2][2][0]);
 			$("#c2s3letter3").css('color', 'white');
 			$("#c2s3letter3").css('background-color', backgroundcolor(letterdice2[ldice2][2][1]));
+			$("#c2s3letter3").on('click', function() {
+				letterselect("c2s3letter3");
+			});
 			$("#c2s3letter4").html(letterdice2[ldice2][3][0]);
 			$("#c2s3letter4").css('color', 'white');
 			$("#c2s3letter4").css('background-color', backgroundcolor(letterdice2[ldice2][3][1]));
@@ -422,6 +425,9 @@ function newthrow() {
 			$("#c2s6letter3").html(letterdice2[ldice2][2][0]);
 			$("#c2s6letter3").css('color', 'white');
 			$("#c2s6letter3").css('background-color', backgroundcolor(letterdice2[ldice2][2][1]));
+			$("#c2s6letter3").on('click', function() {
+				letterselect("c2s6letter3");
+			});
 			$("#c2s6letter4").html(letterdice2[ldice2][3][0]);
 			$("#c2s6letter4").css('color', 'white');
 			$("#c2s6letter4").css('background-color', backgroundcolor(letterdice2[ldice2][3][1]));
