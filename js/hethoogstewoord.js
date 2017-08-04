@@ -599,85 +599,157 @@ function newthrow() {
 			$("#c4s1digit1").html(scoredice[ddice][0][0]);
 			$("#c4s1digit1").css('color', 'white');
 			$("#c4s1digit1").css('background-color', backgroundcolor(scoredice[ddice][0][1]));
+			$("#c4s1digit1").on('click', function() {
+				$("#c4s1digit1").addClass('box-shadow');
+			});
 			$("#c4s1digit2").html(scoredice[ddice][1][0]);
 			$("#c4s1digit2").css('color', 'white');
 			$("#c4s1digit2").css('background-color', backgroundcolor(scoredice[ddice][1][1]));
+			$("#c4s1digit2").on('click', function() {
+				$("#c4s1digit2").addClass('box-shadow');
+			});
 			$("#c4s1digit3").html(scoredice[ddice][2][0]);
 			$("#c4s1digit3").css('color', 'white');
 			$("#c4s1digit3").css('background-color', backgroundcolor(scoredice[ddice][2][1]));
+			$("#c4s1digit3").on('click', function() {
+				$("#c4s1digit3").addClass('box-shadow');
+			});
 			$("#c4s1digit4").html(scoredice[ddice][3][0]);
 			$("#c4s1digit4").css('color', 'white');
 			$("#c4s1digit4").css('background-color', backgroundcolor(scoredice[ddice][3][1]));
+			$("#c4s1digit4").on('click', function() {
+				$("#c4s1digit4").addClass('box-shadow');
+			});
 			break;
 		case 1: document.getElementById('cube4').getElementsByTagName('div')[0].className = 'cube toFront';
 			$("#c4s2digit1").html(scoredice[ddice][0][0]);
 			$("#c4s2digit1").css('color', 'white');
 			$("#c4s2digit1").css('background-color', backgroundcolor(scoredice[ddice][0][1]));
+			$("#c4s2digit1").on('click', function() {
+				$("#c4s2digit1").addClass('box-shadow');
+			});
 			$("#c4s2digit2").html(scoredice[ddice][1][0]);
 			$("#c4s2digit2").css('color', 'white');
 			$("#c4s2digit2").css('background-color', backgroundcolor(scoredice[ddice][1][1]));
+			$("#c4s2digit2").on('click', function() {
+				$("#c4s2digit2").addClass('box-shadow');
+			});
 			$("#c4s2digit3").html(scoredice[ddice][2][0]);
 			$("#c4s2digit3").css('color', 'white');
 			$("#c4s2digit3").css('background-color', backgroundcolor(scoredice[ddice][2][1]));
+			$("#c4s2digit3").on('click', function() {
+				$("#c4s2digit3").addClass('box-shadow');
+			});
 			$("#c4s2digit4").html(scoredice[ddice][3][0]);
 			$("#c4s2digit4").css('color', 'white');
 			$("#c4s2digit4").css('background-color', backgroundcolor(scoredice[ddice][3][1]));
+			$("#c4s2digit4").on('click', function() {
+				$("#c4s2digit4").addClass('box-shadow');
+			});
 			break;
 		case 2: document.getElementById('cube4').getElementsByTagName('div')[0].className = 'cube toBottom';
 			$("#c4s3digit1").html(scoredice[ddice][0][0]);
 			$("#c4s3digit1").css('color', 'white');
 			$("#c4s3digit1").css('background-color', backgroundcolor(scoredice[ddice][0][1]));
+			$("#c4s3digit1").on('click', function() {
+				$("#c4s3digit1").addClass('box-shadow');
+			});
 			$("#c4s3digit2").html(scoredice[ddice][1][0]);
 			$("#c4s3digit2").css('color', 'white');
 			$("#c4s3digit2").css('background-color', backgroundcolor(scoredice[ddice][1][1]));
+			$("#c4s3digit2").on('click', function() {
+				$("#c4s3digit2").addClass('box-shadow');
+			});
 			$("#c4s3digit3").html(scoredice[ddice][2][0]);
 			$("#c4s3digit3").css('color', 'white');
 			$("#c4s3digit3").css('background-color', backgroundcolor(scoredice[ddice][2][1]));
+			$("#c4s3digit3").on('click', function() {
+				$("#c4s3digit3").addClass('box-shadow');
+			});
 			$("#c4s3digit4").html(scoredice[ddice][3][0]);
 			$("#c4s3digit4").css('color', 'white');
 			$("#c4s3digit4").css('background-color', backgroundcolor(scoredice[ddice][3][1]));
+			$("#c4s3digit4").on('click', function() {
+				$("#c4s3digit4").addClass('box-shadow');
+			});
 			break;
 		case 3: document.getElementById('cube4').getElementsByTagName('div')[0].className = 'cube toLeft';
 			$("#c4s4digit1").html(scoredice[ddice][0][0]);
 			$("#c4s4digit1").css('color', 'white');
 			$("#c4s4digit1").css('background-color', backgroundcolor(scoredice[ddice][0][1]));
+			$("#c4s4digit1").on('click', function() {
+				$("#c4s4digit1").addClass('box-shadow');
+			});
 			$("#c4s4digit2").html(scoredice[ddice][1][0]);
 			$("#c4s4digit2").css('color', 'white');
 			$("#c4s4digit2").css('background-color', backgroundcolor(scoredice[ddice][1][1]));
+			$("#c4s4digit2").on('click', function() {
+				$("#c4s4digit2").addClass('box-shadow');
+			});
 			$("#c4s4digit3").html(scoredice[ddice][2][0]);
 			$("#c4s4digit3").css('color', 'white');
 			$("#c4s4digit3").css('background-color', backgroundcolor(scoredice[ddice][2][1]));
+			$("#c4s4digit3").on('click', function() {
+				$("#c4s4digit3").addClass('box-shadow');
+			});
 			$("#c4s4digit4").html(scoredice[ddice][3][0]);
 			$("#c4s4digit4").css('color', 'white');
 			$("#c4s4digit4").css('background-color', backgroundcolor(scoredice[ddice][3][1]));
+			$("#c4s4digit4").on('click', function() {
+				$("#c4s4digit4").addClass('box-shadow');
+			});
 			break;
 		case 4: document.getElementById('cube4').getElementsByTagName('div')[0].className = 'cube toRight';
 			$("#c4s5digit1").html(scoredice[ddice][0][0]);
 			$("#c4s5digit1").css('color', 'white');
 			$("#c4s5digit1").css('background-color', backgroundcolor(scoredice[ddice][0][1]));
+			$("#c4s5digit1").on('click', function() {
+				$("#c4s5digit1").addClass('box-shadow');
+			});
 			$("#c4s5digit2").html(scoredice[ddice][1][0]);
 			$("#c4s5digit2").css('color', 'white');
 			$("#c4s5digit2").css('background-color', backgroundcolor(scoredice[ddice][1][1]));
+			$("#c4s5digit2").on('click', function() {
+				$("#c4s5digit2").addClass('box-shadow');
+			});
 			$("#c4s5digit3").html(scoredice[ddice][2][0]);
 			$("#c4s5digit3").css('color', 'white');
 			$("#c4s5digit3").css('background-color', backgroundcolor(scoredice[ddice][2][1]));
+			$("#c4s5digit3").on('click', function() {
+				$("#c4s5digit3").addClass('box-shadow');
+			});
 			$("#c4s5digit4").html(scoredice[ddice][3][0]);
 			$("#c4s5digit4").css('color', 'white');
 			$("#c4s5digit4").css('background-color', backgroundcolor(scoredice[ddice][3][1]));
+			$("#c4s5digit4").on('click', function() {
+				$("#c4s5digit4").addClass('box-shadow');
+			});
 			break;
 		case 5: document.getElementById('cube4').getElementsByTagName('div')[0].className = 'cube toRear';
 			$("#c4s6digit1").html(scoredice[ddice][0][0]);
 			$("#c4s6digit1").css('color', 'white');
 			$("#c4s6digit1").css('background-color', backgroundcolor(scoredice[ddice][0][1]));
+			$("#c4s6digit1").on('click', function() {
+				$("#c4s6digit1").addClass('box-shadow');
+			});
 			$("#c4s6digit2").html(scoredice[ddice][1][0]);
 			$("#c4s6digit2").css('color', 'white');
 			$("#c4s6digit2").css('background-color', backgroundcolor(scoredice[ddice][1][1]));
+			$("#c4s6digit2").on('click', function() {
+				$("#c4s6digit2").addClass('box-shadow');
+			});
 			$("#c4s6digit3").html(scoredice[ddice][2][0]);
 			$("#c4s6digit3").css('color', 'white');
 			$("#c4s6digit3").css('background-color', backgroundcolor(scoredice[ddice][2][1]));
+			$("#c4s6digit3").on('click', function() {
+				$("#c4s6digit3").addClass('box-shadow');
+			});
 			$("#c4s6digit4").html(scoredice[ddice][3][0]);
 			$("#c4s6digit4").css('color', 'white');
 			$("#c4s6digit4").css('background-color', backgroundcolor(scoredice[ddice][3][1]));
+			$("#c4s6digit4").on('click', function() {
+				$("#c4s6digit4").addClass('box-shadow');
+			});
 			break;
 	}
 }
