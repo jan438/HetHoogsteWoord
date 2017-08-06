@@ -4,7 +4,9 @@ var letterdice2 = [[['n','y'],['e','g'],['f','b'],['r','b']],[['o','g'],['t','r'
 var letterdice3 = [[['d','b'],['h','r'],['t','g'],['o','y']],[['q','r'],['a','y'],['s','b'],['i','b']],[['l','g'],['u','b'],['e','y'],['k','r']],[['n','b'],['g','y'],['e','r'],['z','g']],[['e','g'],['c','r'],['r','r'],['m','y']],[['v','g'],['a','g'],['n','b'],['i','y']]];
 var woordindex = 0;
 function initialization() {
-	console.log("Initialization " + scoredice[2]);
+	var w = window.innerWidth;
+	var h = window.innerHeight;
+	console.log("Initialization " + scoredice[2] + " Screensize: " + w + "-" + h);
 	newthrow();
 }
 function backgroundcolor(c) {
