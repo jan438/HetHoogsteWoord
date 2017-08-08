@@ -7,6 +7,16 @@ function initialization() {
 	var w = window.innerWidth;
 	var h = window.innerHeight;
 	console.log("Initialization " + scoredice[2] + " Screensize: " + w + "-" + h);
+	var lmargin = 50;
+	var rmargin = 50;
+	var cspace = (w - lmargin - rmargin - 200 - 200 - 200 - 200) / 3;
+	$("#cube1").css("left", + lmargin + "px");
+	lmargin = lmargin + 200 + cspace;
+	$("#cube2").css("left", + lmargin + "px");
+	lmargin = lmargin + 200 + cspace;
+	$("#cube3").css("left", + lmargin + "px");
+	lmargin = lmargin + 200 + cspace;
+	$("#cube4").css("left", + lmargin + "px");
 	newthrow();
 }
 function backgroundcolor(c) {
