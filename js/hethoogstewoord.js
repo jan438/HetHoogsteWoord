@@ -9,7 +9,7 @@ function initialization() {
 	console.log("Initialization " + scoredice[2] + " Screensize: " + w + "-" + h);
 	var lmargin = 50;
 	var rmargin = 50;
-	var cspace = (w - lmargin - rmargin - 200 - 200 - 200 - 200) / 3;
+	var cspace = (w - lmargin - rmargin - 800) / 3;
 	$("#cube1").css("left", + lmargin + "px");
 	lmargin = lmargin + 200 + cspace;
 	$("#cube2").css("left", + lmargin + "px");
@@ -17,6 +17,33 @@ function initialization() {
 	$("#cube3").css("left", + lmargin + "px");
 	lmargin = lmargin + 200 + cspace;
 	$("#cube4").css("left", + lmargin + "px");
+	lmargin = 100;
+	rmargin = 100;
+	var wspace = (w - lmargin - rmargin - 600) / 11;
+	$("#word1").css("left", + lmargin + "px");
+	lmargin = lmargin + 50 + wspace;
+	$("#word2").css("left", + lmargin + "px");
+	lmargin = lmargin + 50 + wspace;
+	$("#word3").css("left", + lmargin + "px");
+	lmargin = lmargin + 50 + wspace;
+	$("#word4").css("left", + lmargin + "px");
+	lmargin = lmargin + 50 + wspace;
+	$("#word5").css("left", + lmargin + "px");
+	lmargin = lmargin + 50 + wspace;
+	$("#word6").css("left", + lmargin + "px");
+	lmargin = lmargin + 50 + wspace;
+	$("#word7").css("left", + lmargin + "px");
+	lmargin = lmargin + 50 + wspace;
+	$("#word8").css("left", + lmargin + "px");
+	lmargin = lmargin + 50 + wspace;
+	$("#word9").css("left", + lmargin + "px");
+	lmargin = lmargin + 50 + wspace;
+	$("#word10").css("left", + lmargin + "px");
+	lmargin = lmargin + 50 + wspace;
+	$("#word11").css("left", + lmargin + "px");
+	lmargin = lmargin + 50 + wspace;
+	$("#word12").css("left", + lmargin + "px");
+	lmargin = lmargin + 50 + wspace;
 	newthrow();
 }
 function backgroundcolor(c) {
