@@ -627,9 +627,13 @@ function newthrow() {
 }
 function letterselect(letter) {
 	if ($("#" + letter).hasClass('box-shadow')) {
-		console.log(letter + " selected");
+		placeletter(letter);
 	}
 	else $("#" + letter).addClass('box-shadow');
+}
+function placeletter(letter) {
+	$("#" + letter).removeClass('box-shadow');
+	$("#" + letter).css('color', 'black');
 }
 function clearclasses() {
 	$("#c1s1letter1").removeClass('box-shadow');
