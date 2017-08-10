@@ -4,6 +4,7 @@ var letterdice2 = [[['n','y'],['e','g'],['f','b'],['r','b']],[['o','g'],['t','r'
 var letterdice3 = [[['d','b'],['h','r'],['t','g'],['o','y']],[['q','r'],['a','y'],['s','b'],['i','b']],[['l','g'],['u','b'],['e','y'],['k','r']],[['n','b'],['g','y'],['e','r'],['z','g']],[['e','g'],['c','r'],['r','r'],['m','y']],[['v','g'],['a','g'],['n','b'],['i','y']]];
 var woordindex = 0;
 var scorecolors;
+var scorevalues;
 function initialization() {
 	var w = window.innerWidth;
 	var h = window.innerHeight;
@@ -632,6 +633,7 @@ function letterselect(letter, ddice) {
 	}
 	else $("#" + letter).addClass('box-shadow');
 	scorecolors = scoredice[ddice][0][1] + scoredice[ddice][1][1] + scoredice[ddice][2][1] + scoredice[ddice][3][1];
+	scorevalues = scoredice[ddice][0][0] + scoredice[ddice][1][0] + scoredice[ddice][2][0] + scoredice[ddice][3][0];
 }
 function placeletter(letter) {
 	$("#" + letter).removeClass('box-shadow');
@@ -645,6 +647,7 @@ function placeletter(letter) {
 	if (scorecolor == 'rgb(0, 128, 0)') colorindex = scorecolors.indexOf("g");
 	if (scorecolor == 'rgb(255, 255, 0)') colorindex = scorecolors.indexOf("y");
 	if (scorecolor == 'rgb(0, 0, 255)') colorindex = scorecolors.indexOf("b");
+	console.log(scorevalues[colorindex]);
 }
 function clearclasses() {
 	$("#c1s1letter1").removeClass('box-shadow');
