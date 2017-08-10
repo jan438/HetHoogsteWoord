@@ -639,6 +639,10 @@ function placeletter(letter) {
 	$("#word" + woordindex).html($("#" + letter).html());
 	var scorecolor = $("#" + letter).css('background-color');
 	$("#word" + woordindex).css('background-color', scorecolor);
+	if (scorecolor == 'rgb(255, 0, 0)') console.log("red");
+	if (scorecolor == 'rgb(0, 128, 0)') console.log("green");
+	if (scorecolor == 'rgb(255, 255, 0)') console.log("yellow");
+	if (scorecolor == 'rgb(0, 0, 255)') console.log("blue");
 }
 function clearclasses() {
 	$("#c1s1letter1").removeClass('box-shadow');
