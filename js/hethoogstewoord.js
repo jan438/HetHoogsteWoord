@@ -636,6 +636,8 @@ function placeletter(letter) {
 	$("#" + letter).css('color', 'black');
 	woordindex = woordindex + 1;
 	$("#word" + woordindex).html($("#" + letter).html());
+	var scorecolor = $("#" + letter).css('background-color');
+	$("#word" + woordindex).css('background-color', scorecolor);
 }
 function clearclasses() {
 	$("#c1s1letter1").removeClass('box-shadow');
