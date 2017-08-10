@@ -3,6 +3,7 @@ var letterdice1 = [[['a','y'],['m','r'],['t','b'],['g','g']],[['h','b'],['n','g'
 var letterdice2 = [[['n','y'],['e','g'],['f','b'],['r','b']],[['o','g'],['t','r'],['d','y'],['g','g']],[['x','r'],['o','b'],['k','g'],['a','y']],[['b','g'],['i','y'],['w','r'],['m','r']],[['f','r'],['n','y'],['l','r'],['s','b']],[['e','y'],['a','b'],['p','b'],['u','g']]];
 var letterdice3 = [[['d','b'],['h','r'],['t','g'],['o','y']],[['q','r'],['a','y'],['s','b'],['i','b']],[['l','g'],['u','b'],['e','y'],['k','r']],[['n','b'],['g','y'],['e','r'],['z','g']],[['e','g'],['c','r'],['r','r'],['m','y']],[['v','g'],['a','g'],['n','b'],['i','y']]];
 var woordindex = 0;
+var scorecolors;
 function initialization() {
 	var w = window.innerWidth;
 	var h = window.innerHeight;
@@ -630,7 +631,7 @@ function letterselect(letter, ddice) {
 		placeletter(letter);
 	}
 	else $("#" + letter).addClass('box-shadow');
-	console.log(scoredice[ddice][0][1], scoredice[ddice][1][1], scoredice[ddice][2][1], scoredice[ddice][3][1]);
+	scorecolors = scoredice[ddice][0][1] + scoredice[ddice][1][1] + scoredice[ddice][2][1] + scoredice[ddice][3][1];
 }
 function placeletter(letter) {
 	$("#" + letter).removeClass('box-shadow');
@@ -639,10 +640,11 @@ function placeletter(letter) {
 	$("#word" + woordindex).html($("#" + letter).html());
 	var scorecolor = $("#" + letter).css('background-color');
 	$("#word" + woordindex).css('background-color', scorecolor);
-	if (scorecolor == 'rgb(255, 0, 0)') console.log("red");
-	if (scorecolor == 'rgb(0, 128, 0)') console.log("green");
-	if (scorecolor == 'rgb(255, 255, 0)') console.log("yellow");
-	if (scorecolor == 'rgb(0, 0, 255)') console.log("blue");
+	var colorindex;
+	if (scorecolor == 'rgb(255, 0, 0)') colorindex = scorecolors.indexOf("r");
+	if (scorecolor == 'rgb(0, 128, 0)') colorindex = scorecolors.indexOf("g");
+	if (scorecolor == 'rgb(255, 255, 0)') colorindex = scorecolors.indexOf("y");
+	if (scorecolor == 'rgb(0, 0, 255)') colorindex = scorecolors.indexOf("b");
 }
 function clearclasses() {
 	$("#c1s1letter1").removeClass('box-shadow');
