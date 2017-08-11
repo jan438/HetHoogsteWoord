@@ -5,6 +5,7 @@ var letterdice3 = [[['d','b'],['h','r'],['t','g'],['o','y']],[['q','r'],['a','y'
 var woordindex = 0;
 var scorecolors;
 var scorevalues;
+var wscore = 0;
 function initialization() {
 	var w = window.innerWidth;
 	var h = window.innerHeight;
@@ -63,6 +64,7 @@ function backgroundcolor(c) {
 function newthrow() {
 	clearclasses();
 	clearword();
+	wscore = 0;
 	var ldice1 = Math.floor((Math.random() * 6));
 	var ldice2 = Math.floor((Math.random() * 6));
 	var ldice3 = Math.floor((Math.random() * 6));
@@ -629,12 +631,12 @@ function newthrow() {
 	}
 }
 function letterselect(letter, ddice) {
+	scorecolors = scoredice[ddice][0][1] + scoredice[ddice][1][1] + scoredice[ddice][2][1] + scoredice[ddice][3][1];
+	scorevalues = scoredice[ddice][0][0] + scoredice[ddice][1][0] + scoredice[ddice][2][0] + scoredice[ddice][3][0];
 	if ($("#" + letter).hasClass('box-shadow')) {
 		placeletter(letter);
 	}
 	else if ($("#" + letter).css('color') == 'rgb(255, 255, 255)') $("#" + letter).addClass('box-shadow');
-	scorecolors = scoredice[ddice][0][1] + scoredice[ddice][1][1] + scoredice[ddice][2][1] + scoredice[ddice][3][1];
-	scorevalues = scoredice[ddice][0][0] + scoredice[ddice][1][0] + scoredice[ddice][2][0] + scoredice[ddice][3][0];
 }
 function placeletter(letter) {
 	$("#" + letter).removeClass('box-shadow');
@@ -648,7 +650,8 @@ function placeletter(letter) {
 	if (scorecolor == 'rgb(0, 128, 0)') colorindex = scorecolors.indexOf("g");
 	if (scorecolor == 'rgb(255, 255, 0)') colorindex = scorecolors.indexOf("y");
 	if (scorecolor == 'rgb(0, 0, 255)') colorindex = scorecolors.indexOf("b");
-	console.log(scorevalues[colorindex]);
+	wscore = wscore + parseInt(scorevalues[colorindex]);
+	$("#wordscore").html(wscore);
 }
 function clearclasses() {
 	$("#c1s1letter1").removeClass('box-shadow');
