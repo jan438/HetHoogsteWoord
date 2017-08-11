@@ -631,7 +631,7 @@ function letterselect(letter, ddice) {
 	if ($("#" + letter).hasClass('box-shadow')) {
 		placeletter(letter);
 	}
-	else $("#" + letter).addClass('box-shadow');
+	else if ($("#" + letter).css('color') == 'rgb(255, 255, 255)') $("#" + letter).addClass('box-shadow');
 	scorecolors = scoredice[ddice][0][1] + scoredice[ddice][1][1] + scoredice[ddice][2][1] + scoredice[ddice][3][1];
 	scorevalues = scoredice[ddice][0][0] + scoredice[ddice][1][0] + scoredice[ddice][2][0] + scoredice[ddice][3][0];
 }
