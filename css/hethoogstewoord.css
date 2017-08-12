@@ -26,10 +26,15 @@
   top: 125px;
   left: 125px;
 }
+#resetword {
+  position: absolute;
+  top: 125px;
+  left: 250px;
+}
 #wordscore {
   position: absolute;
   top: 125px;
-  left: 400px;
+  left: 500px;
 }
 #word1 {
   position: absolute;

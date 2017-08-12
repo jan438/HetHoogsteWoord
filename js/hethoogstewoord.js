@@ -754,3 +754,6 @@ function clearword() {
 	$("#word12").html("_");
 	$("#word12").css('background-color', 'white');
 }
+function resethoogsteword() {
+	console.log("resethoogsteword");
+}
