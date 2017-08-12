@@ -756,6 +756,8 @@ function clearword() {
 	$("#word12").html("_");
 	$("#word12").css('background-color', 'white');
 	sourceletter = ["","","","","","","","","","","",""];
+	wscore = 0;
+	$("#wordscore").html(wscore);
 }
 function resethoogsteword() {
 	for (i = 0; i < woordindex; i++) {
@@ -786,4 +788,6 @@ function resethoogsteword() {
 	$("#word11").css('background-color', 'white');
 	$("#word12").html("_");
 	$("#word12").css('background-color', 'white');
+	wscore = 0;
+	$("#wordscore").html(wscore);
 }
