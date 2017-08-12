@@ -6,6 +6,7 @@ var woordindex = 0;
 var scorecolors;
 var scorevalues;
 var wscore = 0;
+var sourceletter = ["","","","","","","","","","","",""];
 function initialization() {
 	var w = window.innerWidth;
 	var h = window.innerHeight;
@@ -641,6 +642,7 @@ function letterselect(letter, ddice) {
 function placeletter(letter) {
 	$("#" + letter).removeClass('box-shadow');
 	$("#" + letter).css('color', 'black');
+	sourceletter[woordindex] = letter;
 	woordindex = woordindex + 1;
 	$("#word" + woordindex).html($("#" + letter).html());
 	var scorecolor = $("#" + letter).css('background-color');
@@ -753,6 +755,7 @@ function clearword() {
 	$("#word11").css('background-color', 'white');
 	$("#word12").html("_");
 	$("#word12").css('background-color', 'white');
+	sourceletter = ["","","","","","","","","","","",""];
 }
 function resethoogsteword() {
 	console.log("resethoogsteword");
