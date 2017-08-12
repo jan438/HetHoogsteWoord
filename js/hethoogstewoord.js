@@ -758,5 +758,32 @@ function clearword() {
 	sourceletter = ["","","","","","","","","","","",""];
 }
 function resethoogsteword() {
-	console.log("resethoogsteword");
+	for (i = 0; i < woordindex; i++) {
+		$("#" + sourceletter[i]).css('color', 'white');
+	}
+	woordindex = 0;
+	$("#word1").html("_");
+	$("#word1").css('background-color', 'white');
+	$("#word2").html("_");
+	$("#word2").css('background-color', 'white');
+	$("#word3").html("_");
+	$("#word3").css('background-color', 'white');
+	$("#word4").html("_");
+	$("#word4").css('background-color', 'white');
+	$("#word5").html("_");
+	$("#word5").css('background-color', 'white');
+	$("#word6").html("_");
+	$("#word6").css('background-color', 'white');
+	$("#word7").html("_");
+	$("#word7").css('background-color', 'white');
+	$("#word8").html("_");
+	$("#word8").css('background-color', 'white');
+	$("#word9").html("_");
+	$("#word9").css('background-color', 'white');
+	$("#word10").html("_");
+	$("#word10").css('background-color', 'white');
+	$("#word11").html("_");
+	$("#word11").css('background-color', 'white');
+	$("#word12").html("_");
+	$("#word12").css('background-color', 'white');
 }
