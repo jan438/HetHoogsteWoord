@@ -7,6 +7,7 @@ var scorecolors;
 var scorevalues;
 var wscore = 0;
 var sourceletter = ["","","","","","","","","","","",""];
+var previousselection = "";
 function initialization() {
 	var w = window.innerWidth;
 	var h = window.innerHeight;
@@ -637,7 +638,12 @@ function letterselect(letter, ddice) {
 	if ($("#" + letter).hasClass('box-shadow')) {
 		placeletter(letter);
 	}
-	else if ($("#" + letter).css('color') == 'rgb(255, 255, 255)') $("#" + letter).addClass('box-shadow');
+	else
+	if ($("#" + letter).css('color') == 'rgb(255, 255, 255)') {
+		if (previousselection != "") $("#" + previousselection).removeClass('box-shadow');
+		$("#" + letter).addClass('box-shadow');
+		previousselection = letter;
+	}
 }
 function placeletter(letter) {
 	$("#" + letter).removeClass('box-shadow');
@@ -758,6 +764,10 @@ function clearword() {
 	sourceletter = ["","","","","","","","","","","",""];
 	wscore = 0;
 	$("#wordscore").html(wscore);
+	if (previousselection != "") {
+		$("#" + previousselection).removeClass('box-shadow');
+		previousselection = "";
+	}
 }
 function resethoogsteword() {
 	for (i = 0; i < woordindex; i++) {
@@ -791,4 +801,8 @@ function resethoogsteword() {
 	sourceletter = ["","","","","","","","","","","",""];
 	wscore = 0;
 	$("#wordscore").html(wscore);
+	if (previousselection != "") {
+		$("#" + previousselection).removeClass('box-shadow');
+		previousselection = "";
+	}
 }
