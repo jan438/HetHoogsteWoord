@@ -37,10 +37,15 @@
   top: 125px;
   left: 250px;
 }
-#wordscore {
+#scoreword {
   position: absolute;
   top: 125px;
   left: 500px;
+}
+#wordscore {
+  position: absolute;
+  top: 125px;
+  left: 650px;
 }
 #word1 {
   position: absolute;
