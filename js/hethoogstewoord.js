@@ -58,6 +58,7 @@ function initialization() {
 	lmargin = lmargin + 50 + wspace;
 	$("#word12").css("left", lmargin + "px");
 	lmargin = lmargin + 50 + wspace;
+	$("#scoresheet").css("top", (verticalspacing * 30 + 300) + "px");
 	newthrow();
 }
 function backgroundcolor(c) {
