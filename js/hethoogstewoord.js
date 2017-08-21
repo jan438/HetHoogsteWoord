@@ -8,10 +8,15 @@ var scorevalues;
 var wscore = 0;
 var sourceletter = ["","","","","","","","","","","",""];
 var previousselection = "";
+var verticalspacing;
 function initialization() {
 	var w = window.innerWidth;
 	var h = window.innerHeight;
 	console.log("Initialization " + scoredice[2] + " Screensize: " + w + "-" + h);
+	verticalspacing = h / 100;
+	$("#hethoogstewoordcontainer").css("top", 0 + "px");
+	$("#hethoogstewoordcontainer").css("width", w + "px");
+	$("#hethoogstewoordcontainer").css("height", (verticalspacing * 30) + "px");
 	var lmargin = 50;
 	var rmargin = 50;
 	var cspace = (w - lmargin - rmargin - 800) / 3;

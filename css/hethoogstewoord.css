@@ -3,7 +3,7 @@
     src: url(../../fonts/Alice-Regular.ttf) format("truetype");
 }
 #hethoogstewoordcontainer {
-  position: relative;
+  position: absolute;
   width: 800px;
   height: 400px;
 }
