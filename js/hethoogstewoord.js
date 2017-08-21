@@ -21,12 +21,16 @@ function initialization() {
 	var rmargin = 50;
 	var cspace = (w - lmargin - rmargin - 800) / 3;
 	$("#cube1").css("left", lmargin + "px");
+	$("#cube1").css("top", (verticalspacing * 30) + "px");
 	lmargin = lmargin + 200 + cspace;
 	$("#cube2").css("left", lmargin + "px");
+	$("#cube2").css("top", (verticalspacing * 30) + "px");
 	lmargin = lmargin + 200 + cspace;
 	$("#cube3").css("left", lmargin + "px");
+	$("#cube3").css("top", (verticalspacing * 30) + "px");
 	lmargin = lmargin + 200 + cspace;
 	$("#cube4").css("left", lmargin + "px");
+	$("#cube4").css("top", (verticalspacing * 30) + "px");
 	lmargin = 100;
 	rmargin = 100;
 	var wspace = (w - lmargin - rmargin - 600) / 11;
