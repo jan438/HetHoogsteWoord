@@ -338,6 +338,18 @@
 </div>
 <script type="text/javascript">
 	$(document).ready(function () {
+		var previousselection = "";
+		$("input[type='checkbox']").change(function() {
+			if ($(this).is(":checked")) {
+				var strid = $(this).attr('id');
+				if (previousselection.length > 0 && strid != previousselection) {
+					$("#" + previousselection).prop('checked', false);
+				}
+				previousselection = strid;
+			}
+			else {
+			}
+		});
 		initialization();
 	});
 </script>
