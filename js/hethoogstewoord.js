@@ -59,6 +59,24 @@ function initialization() {
 	$("#word12").css("left", lmargin + "px");
 	lmargin = lmargin + 50 + wspace;
 	$("#scoresheet").css("top", (verticalspacing * 30 + 300) + "px");
+	$("#ssscore3").html("0");
+	$("#ssscore4").html("0");
+	$("#ssscore5").html("0");
+	$("#ssscore6").html("0");
+	$("#ssscore3").html("0");
+	$("#ssscored").html("0");
+	$("#ssscorep").html("0");
+	$("#ssscore7").html("0");
+	$("#ssscorek").html("0");
+	$("#ssword3").html("------------");
+	$("#ssword4").html("------------");
+	$("#ssword5").html("------------");
+	$("#ssword6").html("------------");
+	$("#ssword3").html("------------");
+	$("#sswordd").html("------------");
+	$("#sswordp").html("------------");
+	$("#ssword7").html("------------");
+	$("#sswordk").html("------------");
 	newthrow();
 }
 function backgroundcolor(c) {
