@@ -834,3 +834,6 @@ function resethoogsteword() {
 		previousselection = "";
 	}
 }
+function fillword(wordid) {
+	console.log("Selected: " + wordid);
+}
